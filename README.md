@@ -26,12 +26,13 @@ composer require phpmailer/phpmailer
 ```
 
 3. Configure the script
-- Copy `config.example.php` to `config.php`
-- Edit `config.php` and set the following constants:
-  - `API_KEY`: Your chosen API key
-  - `GMAIL_USER`: Your Gmail address
-  - `GMAIL_APP_PASSWORD`: Your Gmail app password
-  - `GMAIL_FROM`: Sender email address
+Edit the following constants at the beginning of the script:
+```php
+define('API_KEY', 'your_api_key');  // Your chosen API key
+define('GMAIL_USER', 'your@gmail.com');  // Your Gmail account
+define('GMAIL_APP_PASSWORD', 'xxxx xxxx xxxx xxxx');  // Your Gmail app password
+define('GMAIL_FROM', 'your@gmail.com');  // Sender email address
+```
 
 ## Usage
 
@@ -101,12 +102,13 @@ composer require phpmailer/phpmailer
 ```
 
 3. スクリプトの設定
-- `config.example.php`を`config.php`にコピー
-- `config.php`を編集して以下の定数を設定：
-  - `API_KEY`: 任意のAPIキー
-  - `GMAIL_USER`: Gmailアドレス
-  - `GMAIL_APP_PASSWORD`: Gmailアプリパスワード
-  - `GMAIL_FROM`: 送信元メールアドレス
+スクリプトの先頭にある以下の定数を編集します：
+```php
+define('API_KEY', 'your_api_key');  // 任意のAPIキー
+define('GMAIL_USER', 'your@gmail.com');  // Gmailアカウント
+define('GMAIL_APP_PASSWORD', 'xxxx xxxx xxxx xxxx');  // Gmailアプリパスワード
+define('GMAIL_FROM', 'your@gmail.com');  // 送信元メールアドレス
+```
 
 ## 使い方
 
